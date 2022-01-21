@@ -14,15 +14,32 @@
         <span class="navbar-brand mx-auto"> <p class = "h1" > Weather Dashboard</p></span>
     </nav>
 
-    <!-- Weather cards-->
-    <div class ='col-md-9'>
+    <div class = "Container">
         <div class = "row">
-            <div class = "card">
+            <div class = "col md-3">
+            <div class = " Search">
                 <div class = "body">
-                    
-                </div>            
+                    <label> Enter city name:</label>
+                    <input id = "city" type ="text" class = "form-control" placeholder="nuneaton">
+
+                </div>
             </div>
-        </div>
+            </div>
+            </div>
     </div>
+
+    <!-- Weather cards-->
+    <div class='row'>
+        <!-- header for 5 day forecast Container -->
+        <h5 class='card-title' id="fiveDayHeader">5-Day Forcast</h5>
+    </div>
+    <!-- 5 day forecast loaded dynamically in Javascript -->
+    <div class='row' id='forecast'></div>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js' integrity='sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=' crossorigin='anonymous'></script>
+  <script src='./script.js'></script>
 </body>
 </html>

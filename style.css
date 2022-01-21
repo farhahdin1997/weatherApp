@@ -8,3 +8,13 @@ nav{
     background-color:indigo;
     color: white;
 }
+
+/* five day card header */
+#fiveDayHeader {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+/* Overall Container */
+.container {
+    margin-top: 5px;
+}
