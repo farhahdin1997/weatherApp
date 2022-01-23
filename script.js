@@ -1,23 +1,23 @@
 // Easy access to elements
-var searchHistoryList = $('#search-history-list');
-var searchCityInput = $("#search-city");
-var searchCityButton = $("#search-city-button");
-var clearHistoryButton = $("#clear-history");
-var currentCity = $("#current-city");
-var currentTemp = $("#current-temp");
-var currentHumidity = $("#current-humidity");
-var currentWindSpeed = $("#current-wind-speed");
-var UVindex = $("#uv-index");
-var weatherContent = $("#weather-content");
+const searchHistoryList = $('#search-history-list');
+const  searchCityInput = $("#search-city");
+const  searchCityButton = $("#search-city-button");
+const clearHistoryButton = $("#clear-history");
+const currentCity = $("#current-city");
+const  currentTemp = $("#current-temp");
+const  currentHumidity = $("#current-humidity");
+const  currentWindSpeed = $("#current-wind-speed");
+const  UVindex = $("#uv-index");
+const  weatherContent = $("#weather-content");
 
 // Get access to the OpenWeather API
-var APIkey = "a17e1499228be1f9c294ac18b234c7d7";
+const APIkey = "a17e1499228be1f9c294ac18b234c7d7";
 
 // Easy access to data
-var cityList = [];
+const cityList = [];
 
 //find the current date and display in the title of the page*/
-var currentDate = moment().format('L');
+const currentDate = moment().format('L');
 $("#currentDate").text("("+ currentDate + ")");
 
 // Check if search history exists when page loads
@@ -30,7 +30,7 @@ $(document).on("submit", function(){
     event.preventDefault();
 
     // Grab value entered into search bar 
-    var searchValue = searchCityInput.val().trim();
+    const searchValue = searchCityInput.val().trim();
 
     currentConditionsRequest(searchValue)
     searchHistory(searchValue);
@@ -52,8 +52,31 @@ clearHistoryButton.on("click", function(){
 // will populate the dashboard with info on that city
 searchHistoryList.on("click","li.city-btn", function(event) {
     // console.log($(this).data("value"));
-    var value = $(this).data("value");
+    const value = $(this).data("value");
     currentConditionsRequest(value);
     searchHistory(value); 
 
 });
+
+// Request Open Weather API based on user input
+function currentConditionsRequest(searchValue) {
+    
+    // Formulate URL for AJAX api call
+    const queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&units=imperial&appid=" + APIkey;
+    
+
+ 
+
+    // Request Open Weather API based on user input
+function currentConditionsRequest(searchValue) {
+    
+    // Formulate URL for AJAX api call
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&units=imperial&appid=" + APIkey;
+    
+
+    
+
+ 
+}
+
+}
