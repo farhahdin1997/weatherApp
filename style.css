@@ -2,8 +2,12 @@
     height: 100%;
 }
 
-.hide {
+/*.hide {
     display: none;
+}*/
+
+.nav{
+    background-color:#CBC3E3 ;
 }
 
 .city-btn:hover {
@@ -14,3 +18,14 @@
 .card {
     background-color:#CBC3E3 ;
 }
+
+.button{
+    background-color:#CBC3E3 ;}
+
+
+    @media screen and (min-width: 480px) {
+       /* #nav {width: 200px; float: left;}*/
+        
+    
+    
+      }
