@@ -82,6 +82,7 @@ function currentConditionsRequest(searchValue) {
     
 
     // Make AJAX call
+    //AJAX is used to access web servers from a web page.
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -115,6 +116,7 @@ function currentConditionsRequest(searchValue) {
         var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=" + APIkey + "&lat=" + lat +  "&lon=" + lon;
         
         // AJAX call for 5-day forecast
+        // Access data for five days
         $.ajax({
             url: forecastURL,
             method: "GET"
