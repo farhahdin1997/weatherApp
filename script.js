@@ -219,3 +219,11 @@ function listArray() {
     localStorage.setItem("cities", JSON.stringify(cityList));
     
 }
+ 
+// Check to see if there are elements in
+// search history sidebar in order to show clear history btn
+function showClear() {
+    if (searchHistoryList.text() !== "") {
+        clearHistoryButton.removeClass("hide");
+    }
+}
