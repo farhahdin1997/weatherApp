@@ -19,3 +19,41 @@ var cityList = [];
 //find the current date and display in the title of the page*/
 var currentDate = moment().format('L');
 $("#currentDate").text("("+ currentDate + ")");
+
+// Check if search history exists when page loads
+initalizeHistory();
+showClear();
+
+// Hitting enter while input is focused will trigger
+// value added to search history
+$(document).on("submit", function(){
+    event.preventDefault();
+
+    // Grab value entered into search bar 
+    var searchValue = searchCityInput.val().trim();
+
+    currentConditionsRequest(searchValue)
+    searchHistory(searchValue);
+    searchCityInput.val(""); 
+});
+
+
+// Clear the sidebar of past cities searched
+clearHistoryButton.on("click", function(){
+    // Empty out the  city list array
+    cityList = [];
+    // Update city list history in local storage
+    listArray();
+    
+    $(this).addClass("hide");
+});
+
+// Clicking on a button in the search history sidebar
+// will populate the dashboard with info on that city
+searchHistoryList.on("click","li.city-btn", function(event) {
+    // console.log($(this).data("value"));
+    var value = $(this).data("value");
+    currentConditionsRequest(value);
+    searchHistory(value); 
+
+});
