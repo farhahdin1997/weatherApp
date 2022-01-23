@@ -1,29 +1,72 @@
-#header{
-    color:white;
 
-   
+
+
+
+/* header */
+#header {
+    color: white;
 }
 
-nav{
-    background-color:indigo;
-    color: white;
+.button{
+    background-color:indigo;}
+    
+    nav{
+        background-color:indigo;
+        color: white;
+    }
+    
+/* lists in current and forecast */
+ul { 
+    list-style-type: none;
+    padding-left: 0;
+}
+/* lists in current and forecast */
+li { 
+    font-size: 10pt;
+    padding: 5px 0px;
+}
+/* forecast column */
+.col { 
+    padding: 2px;
+}
+/* Current History Card */
+.card {
+    width: 100%;
+    background-color: #ececec;
+}
+
+/* Overall Container */
+.container {
+    margin-top: 5px;
+    
+}
+
+.cardTitle{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:medium;
+}
+
+h4{
+    font-weight: bold;
+}
+
+/* city history sytling */
+.cityList {
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 2px;
+    background-color: lightgrey;
+}
+/* change color when hovering over history list */
+.cityList:hover {
+    background-color: #0275d8;
+    color: #fff;
 }
 
 /* five day card header */
 #fiveDayHeader {
-    margin-left: 40px;
+    margin-left: 10px;
     margin-top: 10px;
 }
-/* Overall Container */
-.container {
-    margin-top: 5px;
-}
-
-.button{
-background-color: indigo;
-}
-/* search section styling */
-.search-section {
-    height: 100%;
-}
-
