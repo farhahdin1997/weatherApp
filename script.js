@@ -82,7 +82,6 @@ function currentConditionsRequest(searchValue) {
     
 
     // Make AJAX call
-    //AJAX is used to access web servers from a web page.
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -116,7 +115,6 @@ function currentConditionsRequest(searchValue) {
         var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=" + APIkey + "&lat=" + lat +  "&lon=" + lon;
         
         // AJAX call for 5-day forecast
-        // Access data for five days
         $.ajax({
             url: forecastURL,
             method: "GET"
@@ -164,8 +162,10 @@ function currentConditionsRequest(searchValue) {
         });
 
     });
-};
 
+    
+
+};
 
 // Display and save the search history of cities
 function searchHistory(searchValue) {
@@ -219,8 +219,27 @@ function listArray() {
     localStorage.setItem("cities", JSON.stringify(cityList));
     
 }
- 
-// Check to see if there are elements in, search history sidebar in order to show clear history btn
+
+// Grab city list string from local storage
+// and update the city list array
+// for the search history sidebar
+function initalizeHistory() {
+    if (localStorage.getItem("cities")) {
+        cityList = JSON.parse(localStorage.getItem("cities"));
+        var lastIndex = cityList.length - 1;
+        // console.log(cityList);
+        listArray();
+        // Display the last city viewed
+        // if page is refreshed
+        if (cityList.length !== 0) {
+            currentConditionsRequest(cityList[lastIndex]);
+            weatherContent.removeClass("hide");
+        }
+    }
+}
+
+// Check to see if there are elements in
+// search history sidebar in order to show clear history btn
 function showClear() {
     if (searchHistoryList.text() !== "") {
         clearHistoryButton.removeClass("hide");
