@@ -48,15 +48,11 @@ $(document).ready(function () {
       getForecastWeather(location);
     }
 
-    // W3Schools.com Navigator Geolocation Property
-    // console.log if location is unavailable
-    function error() {}
-    // console.log if browser doesn't support location
   }
-
-  /*Function to get current weather*/
+       
+  //Function to get current weather
   // Get current locaation weather
-  function getCurrentWeather(loc) {
+ function getCurrentWeather(loc) {
       
       // function to pull city history from local memory - citylist 
       let cityList = JSON.parse(localStorage.getItem("cityList")) || [];
@@ -74,6 +70,7 @@ $(document).ready(function () {
       });      
     }
       
+
   });
 
 
