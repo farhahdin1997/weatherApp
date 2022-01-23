@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Weather Application</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+
     
 </head>
 <body>
@@ -15,13 +19,29 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!--Header-->
-    <div class="container-fluid">
-        <div class="row navbar navbar-dark bg-dark">
-            <div class="col-12 text-center">
-                <h1 class="navbar-brand pb-0 px-0">Weather Dashboard</h1>
+    <nav class="container-fluid">
+        <div class="row navbar navbar-dark bg-dark ">
+            <div class="col-12 text-center ">
+                <h1 class="navbar-brand">Weather Dashboard</h1>
+            </div>
+        </nav>
+
+        <!--Input section-->
+        <div class = "row content-row">
+            <div class = "col-12 col md-3 bg-light pt-3">
+                <h5> Enter city name:</h5>
+                <form>
+                    <div class = "form-group input-group">
+                        <div class = "input-group-append">
+                            <button class = "btn btn-info" type="button" id ="search-city" placeholder = "Please enter city name here">
+                                <i class = "fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-
+    </div>
 
 <script src= "script.js"></script>
 
