@@ -162,9 +162,6 @@ function currentConditionsRequest(searchValue) {
         });
 
     });
-
-    
-
 };
 
 // Display and save the search history of cities
@@ -217,7 +214,6 @@ function listArray() {
     });
     // Update city list history in local storage
     localStorage.setItem("cities", JSON.stringify(cityList));
-    
 }
 
 // Grab city list string from local storage
