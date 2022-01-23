@@ -3,7 +3,7 @@ $(document).ready(function () {
     // On click of Search or city list
     $('#getEnteredCityWeather,#past-searches').on('click', function () {
   
-          // get location from user input if seearch event
+          // get location from user input if search event
           // or get location from city history if click event from history list
           let clickEvent = $(event.target)[0];
           let location = "";
@@ -24,4 +24,33 @@ $(document).ready(function () {
           getForecastWeather(location);
          });
   
-        });
+         //Converting unix timestamp to MM DD YY Format 
+         /*function convertDate(UNIXtimestamp){
+            
+         }*/
+
+         /*function updateLocalStorage(){
+
+         }*/
+         
+         //Get current user location in order for the user to view the data
+        function establishCurrLocation(){
+            let location ={}; //Setting location to null
+
+        function success(position){
+            location = {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                success: true
+            }
+             // Get current conditions for current location
+          getCurrentWeather(location);
+      
+          // Get forecast for local conditions 
+          getForecastWeather(location);
+        }
+
+
+
+    }
+ });
