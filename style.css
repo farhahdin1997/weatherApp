@@ -18,3 +18,12 @@ nav{
 .container {
     margin-top: 5px;
 }
+
+.button{
+background-color: indigo;
+}
+/* search section styling */
+.search-section {
+    height: 100%;
+}
+
