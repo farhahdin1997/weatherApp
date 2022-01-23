@@ -13,7 +13,12 @@ I want to see the weather outlook for multiple cities
 so that I can plan a trip accordingly
 ``
 
-https://watch.screencastify.com/v/7x9NerCqoIWaIg6lkoDF
+##Overview
+
+
+
+https://user-images.githubusercontent.com/81389441/150693900-ce79a130-3cdb-4e34-94a6-c0fcae1b1195.mp4
+
 
 
 ## Acceptance Criteria
