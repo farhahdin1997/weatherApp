@@ -5,6 +5,12 @@ This project is a weather dashboard application with search feature that allows 
 
 I have used momentjs() to allow users to see the current date. I have used open weather api to allow users to view weather data and jQurey. Bootstrap has also been implemented into this page to allow the web page to be responsive. 
 
+
+
+https://user-images.githubusercontent.com/81389441/150693930-b6c25e36-6b04-43f9-b2a7-ec756ba51c02.mp4
+
+
+
 ## User Story
 
 ```
@@ -12,13 +18,6 @@ As a traveler
 I want to see the weather outlook for multiple cities
 so that I can plan a trip accordingly
 ``
-
-##Overview
-
-
-
-https://user-images.githubusercontent.com/81389441/150693900-ce79a130-3cdb-4e34-94a6-c0fcae1b1195.mp4
-
 
 
 ## Acceptance Criteria
