@@ -7,9 +7,9 @@ I have used momentjs() to allow users to see the current date. I have used open 
 
 <h1> User Story</h1>
 <br>
-As a traveler
-I want to see the weather outlook for multiple cities
-so that I can plan a trip accordingly
+* As a traveler
+* I want to see the weather outlook for multiple cities
+* so that I can plan a trip accordingly
 
 <h1>Acceptance Criteria </h1>
 <br>
