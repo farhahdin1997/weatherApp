@@ -11,7 +11,10 @@ I have used momentjs() to allow users to see the current date. I have used open 
 As a traveler
 I want to see the weather outlook for multiple cities
 so that I can plan a trip accordingly
-```
+``
+
+https://watch.screencastify.com/v/7x9NerCqoIWaIg6lkoDF
+
 
 ## Acceptance Criteria
 ```
