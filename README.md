@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/81389441/150693995-a7fa7a12-fc8a-4d51-
 As a traveler
 I want to see the weather outlook for multiple cities
 so that I can plan a trip accordingly
-``
+```
 
 
 ## Acceptance Criteria
@@ -37,6 +37,7 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+
 
 <a href= "https://github.com/farhahdin1997/weatherApp" >Click me </a> to view repository 
 
