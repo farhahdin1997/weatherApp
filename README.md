@@ -1,3 +1,10 @@
+
+License (usually MIT)
+
+
+Contact information for you and any collaborators
+
+
 <h1>Weather App</h1>
 <br>
 
@@ -28,6 +35,26 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+
+## List of technoloigies used
+```
+Local storage
+HTML 5
+CSS
+Bootstap
+JQurey - Moment Js
+API - Open Weather
+
+```
+
+
+<img width="855" alt="Untitled 6" src="https://user-images.githubusercontent.com/81389441/154729963-89d4d867-ae71-4254-b61c-086f44fe8a66.png">
+
+
+<img width="1438" alt="Untitled 8" src="https://user-images.githubusercontent.com/81389441/154730204-cd1f67b5-e78a-4912-8189-8172d496fc48.png">
+
+
+<img width="193" alt="Untitled 9" src="https://user-images.githubusercontent.com/81389441/154730402-e4d6ff8f-7a80-4df6-a9b3-44028e827f5c.png">
 
 
 <a href= "https://github.com/farhahdin1997/weatherApp" >Click me </a> to view repository 
